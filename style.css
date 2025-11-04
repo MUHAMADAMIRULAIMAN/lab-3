@@ -1,0 +1,135 @@
+/* --- GLOBAL STYLES --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: #000000;
+}
+
+.container {
+  width: 90%;
+  margin: 20px auto;
+  background-color: rgba(255,255,255,0.85);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+
+.logo {
+  text-align: center;
+  background-color: #90b0df;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  background-color: #00095c;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.navigation a:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+
+.header {
+  text-align: center;
+  background-color: #90b0df;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.side_bar {
+  flex-basis: 25%;
+  background-color: #90b0df;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.body_area {
+  flex-basis: 70%;
+  background-color: #90b0df;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.main-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+
+table {
+  border-collapse: collapse;
+}
+table td {
+  border: 1px solid #154d69;
+  padding: 8px;
+}
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+.gallery img {
+  width: 48%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* --- FOOTER --- */
+.footer {
+  background-color: #00095c;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+  .side_bar, .body_area {
+    flex-basis: 100%;
+  }
+}
