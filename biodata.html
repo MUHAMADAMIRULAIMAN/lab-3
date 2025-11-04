@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Biodata</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 20px auto;
+    background-color: #fff;
+  }
+  th, td {
+    border: 1px solid #000;
+    padding: 8px 10px;
+    vertical-align: top;
+  }
+  th {
+    text-align: left;
+    width: 25%;
+  }
+  /* 🧱 nested table fix */
+  td table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0;
+  }
+  td table td {
+    border: 1px solid #666;
+    padding: 6px;
+    vertical-align: top;
+  }
+  /* 🪄 fix for programming list spacing */
+  ul {
+    list-style-position: inside;
+    margin: 5px 0;
+    padding-left: 10px;
+  }
+  .photo {
+    text-align: center;
+  }
+  .photo img {
+    width: 130px;
+    height: auto;
+  }
+  .logo {
+    text-align: center;
+    margin: 15px 0;
+  }
+  .logo img {
+    height: 100px;
+  }
+  .footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+  }
+</style>
+
+</head>
+<body>
+  <div class="container">
+
+    <div class="logo">
+      <img src="UTHMlogo.png" alt="UTHM Logo">
+    </div>
+
+    <div class="navigation">
+      <a href="index.html">Home</a>
+      <a href="biodata.html">Biodata</a>
+      <a href="hobbies.html">Hobbies</a>
+      <a href="campuslife.html">Campus Life</a>
+    </div>
+
+    <h2 style="text-align:center; margin-top:20px;">My Biodata</h2>
+
+    <table>
+      <tr>
+        <th>Name</th>
+        <td>Muhamad Amirul Aiman Bin Nor Azlee</td>
+        <td class="photo" rowspan="5">
+          <b>Photo</b><br>
+          <img src="ProfilePic.jpg" alt="Amirul Photo">
+        </td>
+      </tr>
+      <tr>
+        <th>Date of Birth</th>
+        <td>29 April 2003</td>
+      </tr>
+      <tr>
+        <th>Religion</th>
+        <td>Islam</td>
+      </tr>
+      <tr>
+        <th>Race</th>
+        <td>Melayu</td>
+      </tr>
+      <tr>
+        <th>Address</th>
+        <td>
+          <table width="100%">
+            <tr><td><b>Street</b></td><td>No.29, Jalan Universiti 12</td></tr>
+            <tr><td><b>Town</b></td><td>Parit Raja</td></tr>
+            <tr><td><b>State</b></td><td>Johor</td></tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <th>Contact</th>
+        <td colspan="2">
+          Mobile: +60 18-3853768<br>
+          <a href="https://instagram.com/amirlaimann" target="_blank">Instagram</a>
+        </td>
+      </tr>
+      <tr>
+        <th>Course and Institution</th>
+        <td colspan="2">Bachelor of Software Engineering, UTHM</td>
+      </tr>
+      <tr>
+        <th>Programming Skills</th>
+        <td colspan="2">
+          <ul>
+            <li>HTML & CSS</li>
+            <li>Java</li>
+            <li>Python</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>Hobbies</th>
+        <td colspan="2">Gaming, Music, Sleeping</td>
+      </tr>
+      <tr>
+        <th>2025 Wishlist</th>
+        <td colspan="2">To build a personal website</td>
+      </tr>
+    </table>
+
+    <div class="footer">
+      &copy; Muhamad Amirul Aiman | BIT21503 Web Development
+    </div>
+
+  </div>
+</body>
+</html>
